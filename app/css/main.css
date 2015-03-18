@@ -1,0 +1,405 @@
+@charset "UTF-8";
+/* line 5, ../../../../../../usr/local/Cellar/ruby/2.0.0-p247/lib/ruby/gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../../usr/local/Cellar/ruby/2.0.0-p247/lib/ruby/gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../../usr/local/Cellar/ruby/2.0.0-p247/lib/ruby/gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../../usr/local/Cellar/ruby/2.0.0-p247/lib/ruby/gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../../usr/local/Cellar/ruby/2.0.0-p247/lib/ruby/gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../../usr/local/Cellar/ruby/2.0.0-p247/lib/ruby/gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../usr/local/Cellar/ruby/2.0.0-p247/lib/ruby/gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../usr/local/Cellar/ruby/2.0.0-p247/lib/ruby/gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../../usr/local/Cellar/ruby/2.0.0-p247/lib/ruby/gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+@font-face {
+  font-family: 'AskerFont';
+  src: url("../fonts/11541.eot");
+  src: local("☺"), url("../fonts/11541.woff") format("woff"), url("../fonts/11541.ttf") format("truetype"), url("../fonts/11541.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@-webkit-keyframes rotation {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(359deg);
+  }
+}
+/* line 18, ../sass/main.scss */
+* {
+  box-sizing: border-box;
+}
+
+/* line 20, ../sass/main.scss */
+body {
+  font-family: "AskerFont", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: 300;
+  background-color: #000;
+}
+
+/* line 26, ../sass/main.scss */
+header {
+  width: 100%;
+  min-height: 48px;
+  padding: 12px 10%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999999;
+  background-color: #000;
+}
+/* line 35, ../sass/main.scss */
+header .logo {
+  float: left;
+  width: 20%;
+}
+/* line 38, ../sass/main.scss */
+header .logo img {
+  width: 100%;
+}
+/* line 42, ../sass/main.scss */
+header ul {
+  width: 80%;
+  float: right;
+  height: 100%;
+  list-style: none;
+  text-align: center;
+}
+/* line 48, ../sass/main.scss */
+header ul li {
+  display: inline-block;
+  color: #fff;
+  font-size: 20px;
+  margin: 14px 24px;
+  text-transform: uppercase;
+  cursor: pointer;
+  line-height: 48px;
+}
+/* line 56, ../sass/main.scss */
+header ul li a {
+  color: inherit;
+  text-decoration: none;
+}
+/* line 60, ../sass/main.scss */
+header ul li.active {
+  color: #f5821f;
+}
+
+/* line 66, ../sass/main.scss */
+section {
+  width: 80%;
+  margin: 64px 10%;
+  overflow: hidden;
+}
+/* line 70, ../sass/main.scss */
+section .title {
+  width: 100%;
+  height: 32px;
+  clear: both;
+  line-height: 32px;
+  text-align: center;
+  margin: 32px 0;
+}
+/* line 77, ../sass/main.scss */
+section .title h2 {
+  width: 100%;
+  font-size: 32px;
+  color: #fff;
+}
+
+/* line 84, ../sass/main.scss */
+section#social {
+  min-height: 200px;
+}
+/* line 86, ../sass/main.scss */
+section#social ul {
+  width: 200px;
+  height: 50px;
+  margin: 0 auto;
+}
+/* line 90, ../sass/main.scss */
+section#social ul li {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  color: #fff;
+}
+
+/* line 100, ../sass/main.scss */
+section#info {
+  overflow: none;
+  min-height: 900px;
+}
+/* line 103, ../sass/main.scss */
+section#info .box {
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: 300;
+  width: 50%;
+  min-height: 500px;
+  float: left;
+  position: relative;
+  color: #fff;
+  font-size: 26px;
+}
+/* line 106, ../sass/main.scss */
+section#info .box h2 {
+  font-size: 30px;
+}
+/* line 115, ../sass/main.scss */
+section#info .box a {
+  color: #fff;
+  text-decoration: none;
+}
+/* line 119, ../sass/main.scss */
+section#info .box p {
+  margin: 12px 0;
+}
+/* line 123, ../sass/main.scss */
+section#info #map-canvas {
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  position: absolute !important;
+}
+
+/* line 133, ../sass/main.scss */
+section#galleri ul {
+  width: 100%;
+  min-height: 800px;
+  position: relative;
+}
+/* line 137, ../sass/main.scss */
+section#galleri ul li {
+  width: 200px;
+  height: 100px;
+  border: 1px solid #f5821f;
+  top: 50%;
+  left: 50%;
+  margin-top: -40px;
+  margin-left: -100px;
+  position: absolute;
+}
+/* line 147, ../sass/main.scss */
+section#galleri ul li:nth-child(1) {
+  transform: rotate(0deg) translate(240px) rotate(0deg);
+}
+/* line 147, ../sass/main.scss */
+section#galleri ul li:nth-child(2) {
+  transform: rotate(45deg) translate(240px) rotate(-45deg);
+}
+/* line 147, ../sass/main.scss */
+section#galleri ul li:nth-child(3) {
+  transform: rotate(90deg) translate(240px) rotate(-90deg);
+}
+/* line 147, ../sass/main.scss */
+section#galleri ul li:nth-child(4) {
+  transform: rotate(135deg) translate(240px) rotate(-135deg);
+}
+/* line 147, ../sass/main.scss */
+section#galleri ul li:nth-child(5) {
+  transform: rotate(180deg) translate(240px) rotate(-180deg);
+}
+/* line 147, ../sass/main.scss */
+section#galleri ul li:nth-child(6) {
+  transform: rotate(225deg) translate(240px) rotate(-225deg);
+}
+/* line 147, ../sass/main.scss */
+section#galleri ul li:nth-child(7) {
+  transform: rotate(270deg) translate(240px) rotate(-270deg);
+}
+/* line 147, ../sass/main.scss */
+section#galleri ul li:nth-child(8) {
+  transform: rotate(315deg) translate(240px) rotate(-315deg);
+}
+/* line 157, ../sass/main.scss */
+section#galleri ul li img {
+  width: 100%;
+  height: 100%;
+}
+
+/* line 164, ../sass/main.scss */
+section#slideshow {
+  width: 100%;
+  margin: 0;
+}
+
+/* line 169, ../sass/main.scss */
+section#concept .box {
+  width: 80%;
+  padding-top: 64px;
+  color: #fff;
+  float: left;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: 300;
+}
+/* line 176, ../sass/main.scss */
+section#concept .box p {
+  margin: 24px 0;
+  padding: 0 10%;
+  font-size: 22px;
+  text-transform: uppercase;
+}
+/* line 181, ../sass/main.scss */
+section#concept .box p i {
+  color: #f5821f;
+}
+/* line 185, ../sass/main.scss */
+section#concept .box img {
+  width: 80%;
+  margin: 0 10%;
+}
+/* line 190, ../sass/main.scss */
+section#concept .image-box {
+  width: 20%;
+  height: 100%;
+  float: left;
+}
+
+/* line 200, ../sass/main.scss */
+section#butikk .box {
+  width: 50%;
+  color: #fff;
+  float: left;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: 300;
+}
+/* line 206, ../sass/main.scss */
+section#butikk .box p {
+  margin: 24px 0;
+  padding: 0 10%;
+  font-size: 22px;
+}
+/* line 211, ../sass/main.scss */
+section#butikk .box img {
+  width: 80%;
+  margin: 0 10%;
+}
+
+/* line 217, ../sass/main.scss */
+section#prices {
+  height: 900px;
+}
+/* line 219, ../sass/main.scss */
+section#prices ul {
+  width: 100%;
+  list-style: none;
+}
+/* line 222, ../sass/main.scss */
+section#prices ul li {
+  margin: 24px 0;
+  overflow: hidden;
+  position: relative;
+  min-height: 50px;
+}
+/* line 227, ../sass/main.scss */
+section#prices ul li .wrap {
+  width: 80%;
+  float: left;
+}
+/* line 230, ../sass/main.scss */
+section#prices ul li .wrap .text {
+  color: #fff;
+  width: 100%;
+  font-size: 24px;
+}
+/* line 235, ../sass/main.scss */
+section#prices ul li .wrap .desc {
+  color: #f5821f;
+  width: 100%;
+  font-size: 19px;
+}
+/* line 241, ../sass/main.scss */
+section#prices ul li .price {
+  width: 20%;
+  float: right;
+  color: #fff;
+  font-size: 40px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  text-align: right;
+}
+
+/* line 255, ../sass/main.scss */
+.jssorb03 div, .jssorb03 div:hover, .jssorb03 .av {
+  background: url(../img/b03.png) no-repeat;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+/* line 261, ../sass/main.scss */
+.jssorb03 div {
+  background-position: -5px -4px;
+}
+
+/* line 262, ../sass/main.scss */
+.jssorb03 div:hover, .jssorb03 .av:hover {
+  background-position: -35px -4px;
+}
+
+/* line 263, ../sass/main.scss */
+.jssorb03 .av {
+  background-position: -65px -4px;
+}
+
+/* line 264, ../sass/main.scss */
+.jssorb03 .dn, .jssorb03 .dn:hover {
+  background-position: -95px -4px;
+}

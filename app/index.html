@@ -1,0 +1,401 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>AutoSpa</title>
+	<meta name="description" content="AutoSpa">
+	<meta name="author" content="Mateusz Grzywa">
+	<link rel="stylesheet" href="css/main.min.css?v=1.0">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script src="js/jssor.slider.min.js"></script>
+	<script src="js/galleria/galleria-1.4.2.min.js"></script>
+	  <!--[if lt IE 9]>
+	  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	  <![endif]-->
+	  
+	  <style type="text/css">
+	  	html, body, #map-canvas { height: 100%; margin: 0; padding: 0;}
+	  </style>
+	  <script type="text/javascript"
+	  src="js/jquery.js">
+	</script>
+	<script src="js/main.js"></script>
+	<script type="text/javascript">
+		function initialize() {
+			var stylesArray = [
+			{
+				"stylers": [
+				{ "saturation": -100 }
+				]
+			},{
+				"featureType": "road.highway",
+				"elementType": "geometry",
+				"stylers": [
+				{ "color": "#000000" }
+				]
+			},{
+				"featureType": "road.arterial",
+				"elementType": "geometry",
+				"stylers": [
+				{ "color": "#f5821f" }
+				]
+			}
+			];
+			var mapOptions = {
+				center: { lat: 59.8030683, lng: 10.4770283},
+				zoom: 14,
+				styles: stylesArray
+			};
+			var map = new google.maps.Map(document.getElementById('map-canvas'),
+				mapOptions);
+		}
+		google.maps.event.addDomListener(window, 'load', initialize);
+	</script>
+</head>
+<body>
+	<header>
+		<div class="logo">
+			<img src="images/logo.jpg" />
+		</div>
+		<ul>
+			<a href="#slideshow"><li class="active">Hjem</li></a>
+			<a href="#prices"><li>Tjenester</li></a>
+			<a href="#prices"><li>Priser</li></a>
+			<a href="#galleri"><li>Galleri</li></a>
+			<a href="#concept"><li>Concept</li></a>
+			<a href="#butikk"><li>Butikk</li></a>
+			<a href="#info"><li>Info</li></a>
+		</ul>
+	</header>
+	<section id="slideshow">
+		<div id="slider1_container" style="position: relative; margin: 0 auto; top: 0px; left: 0px; width: 1300px; height: 500px; overflow: hidden;">
+			<div u="navigator" class="jssorb21" style="position: absolute; bottom: 26px; left: 6px;">
+				<!-- bullet navigator item prototype -->
+				<div u="prototype" style="POSITION: absolute; WIDTH: 19px; HEIGHT: 19px; text-align:center; line-height:19px; color:White; font-size:12px;"></div>
+			</div>
+			<!-- Arrow Left -->
+			<span u="arrowleft" class="jssora21l" style="width: 55px; height: 55px; top: 123px; left: 8px;">
+			</span>
+			<!-- Arrow Right -->
+			<span u="arrowright" class="jssora21r" style="width: 55px; height: 55px; top: 123px; right: 8px">
+			</span>
+			<!-- Loading Screen -->
+			<div u="loading" style="position: absolute; top: 0px; left: 0px;">
+				<div style="filter: alpha(opacity=70); opacity: 0.7; position: absolute; display: block;
+				top: 0px; left: 0px; width: 100%; height: 100%;">
+			</div>
+			<div style="position: absolute; display: block; background: url(../img/loading.gif) no-repeat center center;
+			top: 0px; left: 0px; width: 100%; height: 100%;">
+		</div>
+	</div>
+	<!-- Slides Container -->
+	<div u="slides" style="cursor: move; position: absolute; left: 0px; top: 0px; width: 1300px;
+	height: 500px; overflow: hidden;">
+	<div>
+		<img u="image" src="images/image1.png" />
+	</div>
+	<div>
+		<img u="image" src="images/image2.png" />
+	</div>
+	<div>
+		<img u="image" src="images/image3.png" />
+	</div>
+	<div>
+		<img u="image" src="images/image4.png" />
+	</div>
+	<div>
+		<img u="image" src="images/image5.png" />
+	</div>
+</div>
+</section>
+<section id="social">
+	<ul>
+		<li>1</li>
+		<li>2</li>
+		<li>3</li>
+	</ul>
+</section>
+<section id="prices">
+	<div class="title">
+		<h2>BILPLEIE & TJENESTER</h2>
+	</div>
+	<ul>
+		<li>
+			<div class="wrap">
+				<div class="text">spavask & voks</div>
+				<div class="desc">grundig spavask samt voksbehandling holbarhet 6mn.</div>
+			</div>
+			<div class="price">1250</div>
+		</li>
+		<li>
+			<div class="wrap">
+				<div class="text">lakkrens & lakkforsegling eller voks</div>
+				<div class="desc">grundig spavask, claying, motorvask, rens av lakken samt fjerning av noe vaskeriper bilen beskyttes med en eksklusive voks eller langvarig lakforsegling. holbarhet 24 mn.</div>
+			</div>
+			<div class="price">2500</div>
+		</li>
+		<li>
+			<div class="wrap">
+				<div class="text">lakkoreksjon & voksbehandling fra swissvax 12mn.</div>
+				<div class="desc">grundig spavask, claying, lakkoreksjon/ripefjerning opp til 80 % og beskyttelse med 2 lag voks fra swissvax</div>
+			</div>
+			<div class="price">3500</div>
+		</li>
+		<li>
+			<div class="wrap">
+				<div class="text">lakkoreksjon & lakkforsegling Quartz coating 24 mn.</div>
+				<div class="desc">grundig spavask, claying, lakkoreksjon/ripefjerninf opp til 80 % og beskyttelse med quartz coating. holbarhet opp til 24 mn.</div>
+			</div>
+			<div class="price">3900</div>
+		</li>
+		<li>
+			<div class="wrap">
+				<div class="text">ceramic pro light</div>
+				<div class="desc">grundig spavask, claying, lakkoreksjon/ripefjerning opp til 80 % og beskyttelse med ceramin pro light 2 lag. holdarhet 24mn.
+				</div>
+			</div>
+			<div class="price">5000</div>
+		</li>
+		<li>
+			<div class="wrap">
+				<div class="text">optimum gloss-coat</div>
+				<div class="desc">grundig spavask, claying, lakkoreksjon/ripefjerning opp til 80 % og beskyttelse med opti gloss-coat. holbarhet 24 mn.
+				</div>
+			</div>
+			<div class="price">2500</div>
+		</li>
+		<li>
+			<div class="wrap">
+				<div class="text">opti - coat pro 9h ceramic lakkonservering</div>
+				<div class="desc">grundig spavask, fornying av vinyl og gummi. lakkonservering med opti-coat pro vorventet holbarhet opp til 60 mn.</div>
+			</div>
+			<div class="price">5700</div>
+		</li>
+		<li>
+			<div class="wrap">
+				<div class="text">modesta lakkonservering</div>
+				<div class="desc">grundig spavask, fornying av vinyl og gummi, lakkonservering med modesta glass coating inkludert med primer polish. vorventet holbarhet 60 mn og mer
+				</div>
+			</div>
+			<div class="price">5900</div>
+		</li>
+		<li>
+			<div class="wrap">
+				<div class="text">shine for salg inkludert fotografering</div>
+				<div class="desc">grundig vask utvendig samt innvendig. stovsuging motorvask, vask av dorkarmer, felgrens, polering og fornying av gummi/vinyl.</div>
+			</div>
+			<div class="price">3900</div>
+		</li>
+		<li>
+			<div class="wrap">
+				<div class="text">interiorrens & pleie</div>
+				<div class="desc">dyp interiorrens av seter, tepper, dortrekk samt fornying av matter og gummi</div>
+			</div>
+			<div class="price">1900</div>
+		</li>
+		<li>
+			<div class="wrap">
+				<div class="text">fullshine</div>
+				<div class="desc">grundig utvendig og innvendig vask/rens. lakkrens og polering. fornying av gummi, plast og matter. felgrens, dekkvask, motorvask</div>
+			</div>
+			<div class="price">3900</div>
+		</li>
+		<li>
+			<div class="wrap">
+				<div class="text">"pdr" paintless dent removal</div>
+				<div class="desc">bulkretting uten lakkering pris per bulk</div>
+			</div>
+			<div class="price">500</div>
+		</li>
+		<li>
+			<div class="wrap">
+				<div class="text">helfoliering av bil</div>
+				<div class="desc">bulkretting uten lakkering</div>
+			</div>
+			<div class="price">12500</div>
+		</li>
+		<li>
+			<div class="wrap">
+				<div class="text">montering av solfilm</div>
+				<div class="desc">bulkretting uten lakkering</div>
+			</div>
+			<div class="price">3750</div>
+		</li>
+		<li>
+			<div class="wrap">
+				<div class="text">steinsprutreparasjon (karosseri)</div>
+				<div class="desc"></div>
+			</div>
+			<div class="price">1500</div>
+		</li>
+		<li>
+			<div class="wrap">
+				<div class="text">dekkskift</div>
+				<div class="desc"></div>
+			</div>
+			<div class="price">250</div>
+		</li>
+		<li>
+			<div class="wrap">
+				<div class="text">motorvask</div>
+				<div class="desc"></div>
+			</div>
+			<div class="price">250</div>
+		</li>
+	</ul>
+</section>
+<section id="galleri">
+	<div class="title">
+		<h2>GALLERI</h2>
+	</div>
+	<ul class="galleria">
+		<img src="images/galleri/tesla.jpg" data-title="Tesla" data-description="Tesla#1">
+		<img src="images/galleri/tesla-11.jpg" data-title="Tesla" data-description="Tesla#2">
+		<img src="images/galleri/tesla-14.jpg" data-title="Tesla" data-description="Tesla#3">
+		<img src="images/galleri/tesla-15.jpg" data-title="Tesla" data-description="Tesla#4">
+		<img src="images/galleri/tesla-17.jpg" data-title="Tesla" data-description="Tesla#5">
+		<img src="images/galleri/tesla-2.jpg" data-title="Tesla" data-description="Tesla#6">
+		<img src="images/galleri/tesla-6.jpg" data-title="Tesla" data-description="Tesla#7">
+		<img src="images/galleri/tesla-8.jpg" data-title="Tesla" data-description="Tesla#8">
+		<img src="images/galleri/tesla-1.jpg" data-title="Tesla" data-description="Tesla#9">
+	</ul>
+</section>
+<section id="concept">
+	<div class="title">
+		<h2>CONCEPT</h2>
+	</div>
+	<div class="box">
+		<p>vi, hos <i>asker autospa</i> tilbyr tjenester innen detailing/bilpleie og bilkosmetikk.</p>
+		<p>
+			vi ser på bilpleie som et fag ot utført arbeid blir som et kunstaværk.
+		</p>
+		<p>
+			er du en av dem som elker bilen sin og vil ha det lille extra da bør du prøve oss.
+		</p>
+		<p>
+			<i>conceptet</i> vårt er å tilby ulike tjenester innen bilpleie og bilkosmetikk under samme tak og levere kvalitests arbeid.
+		</p>
+		<p>
+			grundig gjennomgang av hver enkelte kjøretøy, lakktilstands befaring dermed i mange tilfeller individuel pris vil bli gitt etter bilens tilstand.
+		</p>
+		<p>
+			vi bruker pro-line produkter under behandlinger. du får gode råd og tips for videre riktig bilhold.
+			vedilikeholdsprodukter kan også kjøpes hos oss.
+		</p>
+		<p>
+			vi har flere gode referanser som private og forhandlere blant annet <i>møller bil, bjørn kveim as, slemmstad karroseri as</i>
+		</p>
+	</div>
+	<div class="image-box">
+		<img src="images/concept.png" />
+	</div>
+</section>
+<section id="butikk">
+	<div class="title">
+		<h2>BUTIKK</h2>
+	</div>
+	<div class="box">
+		<p>
+			HOS OS KAN DU KJØPE MED DEG RIKTIG KJEMI FOR BILEN DIN. 
+		</p>
+		<p>
+			VI ER BEHJELPELIGE VED VALG AV RIKITIG BILSHAMPOO FOR DIN BEHANDLET BIL
+		</p>
+		<p>
+			VASK BILEN DIN SOM EN PROFF. HOS OSS KAN DU KJØPE PROFF VASKEPAKKE FOR DIN ELSKERINNE (BIL)
+		</p>
+		<p>
+			KUN BESTE VEDLIKEHOLDSPRODUKTER FOR BILEN DIL.
+		</p>
+		<p>BILEN DIN ELSKER DEG!</p>
+
+	</div>
+	<div class="box">
+		<img src="images/butikk.png" />
+	</div>
+</section>
+<section id="info">
+	<div class="title">
+		<h2>INFO</h2>
+	</div>
+	<div class="box">
+		<h2>Asker AutoSpa</h2>
+		<p>Øgårdsveien 35</p>
+
+		<p>Vollen</p>
+
+		<p>+47 416 08 947</p>
+
+		<a href="mailto:askerautospa@gmail.com">askerautospa@gmail.com</a>
+
+	</div>
+	<div class="box">
+		<div id="map-canvas"></div>
+	</div>
+</section>
+<!-- Bullet Navigator Skin Begin -->
+<style>
+	/* jssor slider bullet navigator skin 21 css */
+            /*
+            .jssorb21 div           (normal)
+            .jssorb21 div:hover     (normal mouseover)
+            .jssorb21 .av           (active)
+            .jssorb21 .av:hover     (active mouseover)
+            .jssorb21 .dn           (mousedown)
+            */
+            .jssorb21 div, .jssorb21 div:hover, .jssorb21 .av
+            {
+            	background: url(images/b21.png) no-repeat;
+            	overflow:hidden;
+            	cursor: pointer;
+            }
+            .jssorb21 div { background-position: -5px -5px; }
+            .jssorb21 div:hover, .jssorb21 .av:hover { background-position: -35px -5px; }
+            .jssorb21 .av { background-position: -65px -5px; }
+            .jssorb21 .dn, .jssorb21 .dn:hover { background-position: -95px -5px; }
+        </style>
+        <!-- bullet navigator container -->
+        
+        <!-- Bullet Navigator Skin End -->
+
+        <!-- Arrow Navigator Skin Begin -->
+        <style>
+        	/* jssor slider arrow navigator skin 21 css */
+            /*
+            .jssora21l              (normal)
+            .jssora21r              (normal)
+            .jssora21l:hover        (normal mouseover)
+            .jssora21r:hover        (normal mouseover)
+            .jssora21ldn            (mousedown)
+            .jssora21rdn            (mousedown)
+            */
+            .jssora21l, .jssora21r, .jssora21ldn, .jssora21rdn
+            {
+            	position: absolute;
+            	cursor: pointer;
+            	display: block;
+            	background: url(images/a21.png) center center no-repeat;
+            	overflow: hidden;
+            }
+            .jssora21l { background-position: -3px -33px; }
+            .jssora21r { background-position: -63px -33px; }
+            .jssora21l:hover { background-position: -123px -33px; }
+            .jssora21r:hover { background-position: -183px -33px; }
+            .jssora21ldn { background-position: -243px -33px; }
+            .jssora21rdn { background-position: -303px -33px; }
+        </style>
+
+    </body>
+    </html>
+
+<!-- 
+	<li>
+		<div class="wrap">
+			<div class="text"></div>
+			<div class="desc"></div>
+		</div>
+
+		<div class="price"></div>
+	</li> -->
