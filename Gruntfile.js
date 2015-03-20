@@ -40,7 +40,8 @@ module.exports = function( grunt ) {
 		},
 		serve: {
 	        options: {
-	            port: 9000
+	            port: 80,
+	            path: '/home/website/app/'
 	        }
 	    }
 	} );
