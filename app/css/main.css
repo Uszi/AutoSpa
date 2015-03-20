@@ -1,5 +1,5 @@
 @charset "UTF-8";
-/* line 5, ../../../../../../usr/local/Cellar/ruby/2.0.0-p247/lib/ruby/gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 5, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -21,45 +21,45 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 22, ../../../../../../usr/local/Cellar/ruby/2.0.0-p247/lib/ruby/gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 22, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1;
 }
 
-/* line 24, ../../../../../../usr/local/Cellar/ruby/2.0.0-p247/lib/ruby/gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 24, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 26, ../../../../../../usr/local/Cellar/ruby/2.0.0-p247/lib/ruby/gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 26, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 28, ../../../../../../usr/local/Cellar/ruby/2.0.0-p247/lib/ruby/gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 28, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 30, ../../../../../../usr/local/Cellar/ruby/2.0.0-p247/lib/ruby/gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 30, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 103, ../../../../../../usr/local/Cellar/ruby/2.0.0-p247/lib/ruby/gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 103, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 32, ../../../../../../usr/local/Cellar/ruby/2.0.0-p247/lib/ruby/gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 32, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 116, ../../../../../../usr/local/Cellar/ruby/2.0.0-p247/lib/ruby/gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 116, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block;
 }
@@ -102,16 +102,20 @@ header {
   z-index: 9999999;
   background-color: #000;
 }
-/* line 35, ../sass/main.scss */
+/* line 27, ../sass/main.scss */
+header.mobile {
+  display: none;
+}
+/* line 38, ../sass/main.scss */
 header .logo {
   float: left;
   width: 20%;
 }
-/* line 38, ../sass/main.scss */
+/* line 41, ../sass/main.scss */
 header .logo img {
   width: 100%;
 }
-/* line 42, ../sass/main.scss */
+/* line 45, ../sass/main.scss */
 header ul {
   width: 80%;
   float: right;
@@ -119,7 +123,7 @@ header ul {
   list-style: none;
   text-align: center;
 }
-/* line 48, ../sass/main.scss */
+/* line 51, ../sass/main.scss */
 header ul li {
   display: inline-block;
   color: #fff;
@@ -129,23 +133,190 @@ header ul li {
   cursor: pointer;
   line-height: 48px;
 }
-/* line 56, ../sass/main.scss */
+/* line 59, ../sass/main.scss */
 header ul li a {
   color: inherit;
   text-decoration: none;
 }
-/* line 60, ../sass/main.scss */
+/* line 63, ../sass/main.scss */
 header ul li.active {
   color: #f5821f;
 }
 
-/* line 66, ../sass/main.scss */
+@media only screen and (max-width: 640px) {
+  /* STYLES GO HERE */
+  /* line 71, ../sass/main.scss */
+  .galleria-theme-classic img {
+    top: 0 !important;
+  }
+
+  /* line 74, ../sass/main.scss */
+  section#social {
+    min-height: 0 !important;
+  }
+
+  /* line 77, ../sass/main.scss */
+  section#prices {
+    height: auto !important;
+    margin: 0 !important;
+    width: 100% !important;
+  }
+  /* line 81, ../sass/main.scss */
+  section#prices .price {
+    float: left !important;
+    font-size: 30px !important;
+    position: relative !important;
+    margin-left: -4px !important;
+  }
+  /* line 87, ../sass/main.scss */
+  section#prices .wrap {
+    float: none !important;
+    width: 100% !important;
+  }
+
+  /* line 93, ../sass/main.scss */
+  section#galleri ul {
+    min-height: 0 !important;
+  }
+  /* line 96, ../sass/main.scss */
+  section#galleri .galleria-image-nav {
+    margin-top: -330px !important;
+  }
+  /* line 99, ../sass/main.scss */
+  section#galleri .galleria-thumbnails-container.galleria-carousel {
+    top: 235px !important;
+  }
+  /* line 102, ../sass/main.scss */
+  section#galleri .galleria-counter {
+    top: 204px !important;
+    overflow: hidden;
+  }
+  /* line 106, ../sass/main.scss */
+  section#galleri .galleria-container.notouch.galleria-theme-classic {
+    height: 360px !important;
+  }
+
+  /* line 111, ../sass/main.scss */
+  section#concept .box {
+    width: 100% !important;
+    padding-top: 0 !important;
+  }
+  /* line 114, ../sass/main.scss */
+  section#concept .box p {
+    padding: 0 !important;
+  }
+  /* line 118, ../sass/main.scss */
+  section#concept .image-box {
+    width: 272px !important;
+    margin: 0 18px !important;
+  }
+
+  /* line 123, ../sass/main.scss */
+  section#butikk {
+    padding: 64px 0 !important;
+  }
+  /* line 125, ../sass/main.scss */
+  section#butikk .box {
+    width: 100% !important;
+  }
+  /* line 127, ../sass/main.scss */
+  section#butikk .box img {
+    width: 91% !important;
+  }
+
+  /* line 132, ../sass/main.scss */
+  section#info {
+    min-height: 0 !important;
+  }
+  /* line 134, ../sass/main.scss */
+  section#info .box {
+    width: 100% !important;
+    height: auto !important;
+    min-height: 0 !important;
+  }
+
+  /* line 140, ../sass/main.scss */
+  header.desktop {
+    display: none;
+  }
+
+  /* line 143, ../sass/main.scss */
+  header.mobile {
+    display: block;
+    position: relative;
+    overflow: hidden;
+  }
+  /* line 147, ../sass/main.scss */
+  header.mobile .logo {
+    float: left;
+    width: 50%;
+  }
+  /* line 150, ../sass/main.scss */
+  header.mobile .logo img {
+    width: 100%;
+  }
+  /* line 154, ../sass/main.scss */
+  header.mobile .nav-button {
+    width: 54px;
+    height: 48px;
+    overflow: hidden;
+    float: right;
+    margin: -6px 0px 0px 0px;
+  }
+  /* line 160, ../sass/main.scss */
+  header.mobile .nav-button ul {
+    width: 100%;
+    height: 100%;
+    list-style: none;
+    cursor: pointer;
+  }
+  /* line 165, ../sass/main.scss */
+  header.mobile .nav-button ul li {
+    width: 100%;
+    height: 6%;
+    clear: both;
+    background-color: #fff;
+  }
+  /* line 173, ../sass/main.scss */
+  header.mobile ul {
+    width: 100%;
+    height: 0px;
+    overflow: hidden;
+    float: right;
+    list-style: none;
+    text-align: center;
+  }
+  /* line 174, ../sass/main.scss */
+  header.mobile ul.open {
+    height: 100%;
+  }
+  /* line 183, ../sass/main.scss */
+  header.mobile ul li {
+    width: 100%;
+    color: #fff;
+    font-size: 20px;
+    margin: 0px 24px;
+    text-transform: uppercase;
+    cursor: pointer;
+    line-height: 48px;
+  }
+  /* line 191, ../sass/main.scss */
+  header.mobile ul li a {
+    color: inherit;
+    text-decoration: none;
+  }
+  /* line 195, ../sass/main.scss */
+  header.mobile ul li.active {
+    color: #f5821f;
+  }
+}
+/* line 205, ../sass/main.scss */
 section {
   width: 80%;
   margin: 64px 10%;
   overflow: hidden;
 }
-/* line 70, ../sass/main.scss */
+/* line 209, ../sass/main.scss */
 section .title {
   width: 100%;
   height: 32px;
@@ -154,24 +325,24 @@ section .title {
   text-align: center;
   margin: 32px 0;
 }
-/* line 77, ../sass/main.scss */
+/* line 216, ../sass/main.scss */
 section .title h2 {
   width: 100%;
   font-size: 32px;
   color: #fff;
 }
 
-/* line 84, ../sass/main.scss */
+/* line 223, ../sass/main.scss */
 section#social {
   min-height: 200px;
 }
-/* line 86, ../sass/main.scss */
+/* line 225, ../sass/main.scss */
 section#social ul {
   width: 200px;
   height: 50px;
   margin: 0 auto;
 }
-/* line 90, ../sass/main.scss */
+/* line 229, ../sass/main.scss */
 section#social ul li {
   display: inline-block;
   width: 50px;
@@ -181,12 +352,12 @@ section#social ul li {
   color: #fff;
 }
 
-/* line 100, ../sass/main.scss */
+/* line 239, ../sass/main.scss */
 section#info {
   overflow: none;
   min-height: 900px;
 }
-/* line 103, ../sass/main.scss */
+/* line 242, ../sass/main.scss */
 section#info .box {
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-weight: 300;
@@ -197,20 +368,20 @@ section#info .box {
   color: #fff;
   font-size: 26px;
 }
-/* line 106, ../sass/main.scss */
+/* line 245, ../sass/main.scss */
 section#info .box h2 {
   font-size: 30px;
 }
-/* line 115, ../sass/main.scss */
+/* line 254, ../sass/main.scss */
 section#info .box a {
   color: #fff;
   text-decoration: none;
 }
-/* line 119, ../sass/main.scss */
+/* line 258, ../sass/main.scss */
 section#info .box p {
   margin: 12px 0;
 }
-/* line 123, ../sass/main.scss */
+/* line 262, ../sass/main.scss */
 section#info #map-canvas {
   width: 100%;
   height: 100%;
@@ -219,13 +390,13 @@ section#info #map-canvas {
   position: absolute !important;
 }
 
-/* line 133, ../sass/main.scss */
+/* line 272, ../sass/main.scss */
 section#galleri ul {
   width: 100%;
   min-height: 800px;
   position: relative;
 }
-/* line 137, ../sass/main.scss */
+/* line 276, ../sass/main.scss */
 section#galleri ul li {
   width: 200px;
   height: 100px;
@@ -236,51 +407,51 @@ section#galleri ul li {
   margin-left: -100px;
   position: absolute;
 }
-/* line 147, ../sass/main.scss */
+/* line 286, ../sass/main.scss */
 section#galleri ul li:nth-child(1) {
   transform: rotate(0deg) translate(240px) rotate(0deg);
 }
-/* line 147, ../sass/main.scss */
+/* line 286, ../sass/main.scss */
 section#galleri ul li:nth-child(2) {
   transform: rotate(45deg) translate(240px) rotate(-45deg);
 }
-/* line 147, ../sass/main.scss */
+/* line 286, ../sass/main.scss */
 section#galleri ul li:nth-child(3) {
   transform: rotate(90deg) translate(240px) rotate(-90deg);
 }
-/* line 147, ../sass/main.scss */
+/* line 286, ../sass/main.scss */
 section#galleri ul li:nth-child(4) {
   transform: rotate(135deg) translate(240px) rotate(-135deg);
 }
-/* line 147, ../sass/main.scss */
+/* line 286, ../sass/main.scss */
 section#galleri ul li:nth-child(5) {
   transform: rotate(180deg) translate(240px) rotate(-180deg);
 }
-/* line 147, ../sass/main.scss */
+/* line 286, ../sass/main.scss */
 section#galleri ul li:nth-child(6) {
   transform: rotate(225deg) translate(240px) rotate(-225deg);
 }
-/* line 147, ../sass/main.scss */
+/* line 286, ../sass/main.scss */
 section#galleri ul li:nth-child(7) {
   transform: rotate(270deg) translate(240px) rotate(-270deg);
 }
-/* line 147, ../sass/main.scss */
+/* line 286, ../sass/main.scss */
 section#galleri ul li:nth-child(8) {
   transform: rotate(315deg) translate(240px) rotate(-315deg);
 }
-/* line 157, ../sass/main.scss */
+/* line 296, ../sass/main.scss */
 section#galleri ul li img {
   width: 100%;
   height: 100%;
 }
 
-/* line 164, ../sass/main.scss */
+/* line 303, ../sass/main.scss */
 section#slideshow {
   width: 100%;
   margin: 0;
 }
 
-/* line 169, ../sass/main.scss */
+/* line 308, ../sass/main.scss */
 section#concept .box {
   width: 80%;
   padding-top: 64px;
@@ -289,30 +460,30 @@ section#concept .box {
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-weight: 300;
 }
-/* line 176, ../sass/main.scss */
+/* line 315, ../sass/main.scss */
 section#concept .box p {
   margin: 24px 0;
   padding: 0 10%;
   font-size: 22px;
   text-transform: uppercase;
 }
-/* line 181, ../sass/main.scss */
+/* line 320, ../sass/main.scss */
 section#concept .box p i {
   color: #f5821f;
 }
-/* line 185, ../sass/main.scss */
+/* line 324, ../sass/main.scss */
 section#concept .box img {
   width: 80%;
   margin: 0 10%;
 }
-/* line 190, ../sass/main.scss */
+/* line 329, ../sass/main.scss */
 section#concept .image-box {
   width: 20%;
   height: 100%;
   float: left;
 }
 
-/* line 200, ../sass/main.scss */
+/* line 339, ../sass/main.scss */
 section#butikk .box {
   width: 50%;
   color: #fff;
@@ -320,52 +491,53 @@ section#butikk .box {
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-weight: 300;
 }
-/* line 206, ../sass/main.scss */
+/* line 345, ../sass/main.scss */
 section#butikk .box p {
   margin: 24px 0;
   padding: 0 10%;
   font-size: 22px;
 }
-/* line 211, ../sass/main.scss */
+/* line 350, ../sass/main.scss */
 section#butikk .box img {
   width: 80%;
   margin: 0 10%;
 }
 
-/* line 217, ../sass/main.scss */
+/* line 356, ../sass/main.scss */
 section#prices {
   height: 900px;
 }
-/* line 219, ../sass/main.scss */
+/* line 358, ../sass/main.scss */
 section#prices ul {
   width: 100%;
   list-style: none;
+  overflow: hidden;
 }
-/* line 222, ../sass/main.scss */
+/* line 362, ../sass/main.scss */
 section#prices ul li {
   margin: 24px 0;
   overflow: hidden;
   position: relative;
   min-height: 50px;
 }
-/* line 227, ../sass/main.scss */
+/* line 367, ../sass/main.scss */
 section#prices ul li .wrap {
   width: 80%;
   float: left;
 }
-/* line 230, ../sass/main.scss */
+/* line 370, ../sass/main.scss */
 section#prices ul li .wrap .text {
   color: #fff;
   width: 100%;
   font-size: 24px;
 }
-/* line 235, ../sass/main.scss */
+/* line 375, ../sass/main.scss */
 section#prices ul li .wrap .desc {
   color: #f5821f;
   width: 100%;
   font-size: 19px;
 }
-/* line 241, ../sass/main.scss */
+/* line 381, ../sass/main.scss */
 section#prices ul li .price {
   width: 20%;
   float: right;
@@ -377,29 +549,29 @@ section#prices ul li .price {
   text-align: right;
 }
 
-/* line 255, ../sass/main.scss */
+/* line 395, ../sass/main.scss */
 .jssorb03 div, .jssorb03 div:hover, .jssorb03 .av {
   background: url(../img/b03.png) no-repeat;
   overflow: hidden;
   cursor: pointer;
 }
 
-/* line 261, ../sass/main.scss */
+/* line 401, ../sass/main.scss */
 .jssorb03 div {
   background-position: -5px -4px;
 }
 
-/* line 262, ../sass/main.scss */
+/* line 402, ../sass/main.scss */
 .jssorb03 div:hover, .jssorb03 .av:hover {
   background-position: -35px -4px;
 }
 
-/* line 263, ../sass/main.scss */
+/* line 403, ../sass/main.scss */
 .jssorb03 .av {
   background-position: -65px -4px;
 }
 
-/* line 264, ../sass/main.scss */
+/* line 404, ../sass/main.scss */
 .jssorb03 .dn, .jssorb03 .dn:hover {
   background-position: -95px -4px;
 }
